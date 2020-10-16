@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    box-sizing:border-box;
+}
+
+section{
+    position: relative;
+    min-height:1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2{
+    font-family: 'Roboto', sans-serif; 
+    color: wheat;
+    font-size: 350px;
+    cursor: default;
+    
+}
+
+.light{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%; /*cet element prend toute la feuille*/
+    pointer-events: none; /*pas de changement de style lorsque la souris passe sur cet element*/
+    background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0,0,0,0.95) 20%);
+}

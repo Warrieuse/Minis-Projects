@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.face{
+    position: relative;
+    width: 500px;
+    height: 500px;border-radius: 50%;
+    background: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.face::before{
+    content: '';
+    position: absolute;
+    top: 360px;
+    width: 150px;   height: 70px;
+    background: maroon;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transition: 0.5s;
+}
+
+.face:hover::before{
+    top: 360px;
+    width: 150px;   height: 70px;
+    background: darkred;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+}
+
+.face:active::before{
+    top: 280px;
+    width: 200px;   height: 200px;
+    background:darkred;
+    border-top: 50%;
+}
+
+.face:active .eye{
+    width: 160px;
+    height: 80px;
+    background: red;
+    border-radius: 50%;
+}
+
+.face:active .ball{
+    width: 70px;
+    height: 10px;
+    background:black;
+    border-radius: 50%;
+}
+
+.eyes{
+    position: relative;
+    top: -50px;
+    display: flex;
+}
+
+.eye{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    display: block;
+    background: darksalmon;
+    margin: 0 15px;
+    border-radius: 50%;
+    overflow: hidden; /*pour que la pupille ne dpasse pas de l'oeil*/
+    transition: 1s;
+}
+
+.ball{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+
+    width: 70px;
+    height: 70px;
+    background: black;
+    border-radius: 50%;
+
+}
