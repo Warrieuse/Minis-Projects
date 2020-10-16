@@ -1,0 +1,123 @@
+/*reset CSS*/
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: url('images/spiritualité.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;/*il risque d'avoir des chose qui dépasse au cas ou */
+}
+
+.container-first{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+h1{
+    font-size: 110px;
+    color: black;
+    font-family: 'Cabin', sans-serif;
+}
+
+h1 span{
+    position: relative;/*pour les animations*/
+}
+
+.container-btns{
+    position: relative;
+    top: 300px;
+}
+
+.btn-first{
+    border: 2px solid #f1f1f1;
+    border-radius: 20px;
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.btn-first:nth-child(1){
+    margin-right: 30px;
+}
+
+.btn-first:hover{
+    transition: all 0,5s ease-in-out;
+    background: whitesmoke;
+    color: #333;
+}
+
+.lignes{
+    position: absolute;
+    top: 6%;
+    left: 5%;
+}
+
+.l1{
+    width: 250px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.l2{
+    position: relative;
+    width: 140px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    top: 20px;
+}
+
+.logo{
+    position: absolute;
+    right: 3%;
+    top: 4%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.medias{
+    list-style-type: none;
+    position: absolute;
+    right: 4%;
+    top: 60%;
+    transform: translateY(-50%); /*parfaitement centrer sur laxe Y*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bulle{
+    width: 80px;    height: 80px;
+    border-radius: 50%;
+    border: 1px solid wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background: whitesmoke;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;/*car le logo IN dépassait*/
+}
+
+.logo-medias{
+    width: 60px;    height: 60px;
+}
+
